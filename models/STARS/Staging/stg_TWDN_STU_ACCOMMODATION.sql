@@ -1,9 +1,12 @@
 with TLTN_STU_SKVSSDT as (
-select * from ​​​​​​​​{{ ​​​​​​​​ref('TLTN_STU_SKVSSDT')}​​​​​​​​​​​​​​​}
+
+    select *	 
+FROM ​​​​​​​​{{ ​​​​​​​​ref ( 'TLTN_STU_SKVSSDT' ) }​​​​​​​​​​​​​​​}
+
 ),
 
-stg_TWDN_STU_ACCOMMODATION as
-(
+stg_TWDN_STU_ACCOMMODATION as (
+
 SELECT ​​​​​​​​
 TLTN_STU_SKVSSDT.SKVSSDT_SDAT_CODE_OPT_1,
 ​​​​​​​​TLTN_STU_SKVSSDT.SKVSSDT_TITLE
