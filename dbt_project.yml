@@ -35,6 +35,6 @@ models:
   STARS:
     Staging:
      +materialized: table
-    Core:
+    target:
       +materialized: table
 
